@@ -53,7 +53,10 @@ int main(int argc, char* argv[])
             for (int j=m1; j<=m2; j++)
                 if (is_prime( Data[j]))
                     count++;
-            cout <<count<<" ";
+            if ((argc-2-i)==0)
+            cout <<count;
+            else
+            cout <<count<<endl;
         }
     }
     cout << endl;
